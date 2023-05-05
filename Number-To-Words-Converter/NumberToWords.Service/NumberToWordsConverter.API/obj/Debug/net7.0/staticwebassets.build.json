@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c35f86WfOS9BmO6WTJGM3FmHMaVPnDvDD3v6Ol8uz78=",
+  "Source": "NumberToWordsConverter.API",
+  "BasePath": "_content/NumberToWordsConverter.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
