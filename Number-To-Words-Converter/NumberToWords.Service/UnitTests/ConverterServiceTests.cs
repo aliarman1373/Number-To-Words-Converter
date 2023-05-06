@@ -27,9 +27,9 @@ namespace UnitTests
         [InlineData(.00021, null)]
         [InlineData(-21321, null)]
 
-        public async Task ConvertNumberToWords_ShouldReturnResult_AsExpected(decimal number, string expected)
+        public async Task ConvertNumberToWordsInCurrency_ShouldReturnResult_AsExpected(decimal number, string expected)
         {
-            string actual = _converterService.ConvertNumberToWords(number);
+            string actual = _converterService.ConvertNumberToWordsInCurrency(number);
             Assert.Equal(expected, actual);
         }
 
@@ -63,15 +63,6 @@ namespace UnitTests
             Assert.Equal(expected, result); 
         }
 
-        [Theory]
-        [InlineData(123,true, "One Hundred And Twenty-Three")]
-        [InlineData(23,false, "Twenty-Three")]
-        [InlineData(0,true, "")]
-        public async Task Generate3DigitNumberWords_ShouldGenerate_AsExpected(int number,bool shouldIncludeAnd, string expected)
-        {
-            string result = String.Join(" ", _converterService.Generate3DigitNumberWords(number,shouldIncludeAnd));
-            Assert.Equal(expected, result);
-        }
 
         [Theory]
         [InlineData(245687986, 3)]
@@ -85,23 +76,7 @@ namespace UnitTests
             Assert.Equal(expectedSplitCount, count);
         }
 
-        [Theory]
-        [InlineData(123, "One Hundred And Twenty-Three Dollars")]
-        [InlineData(1, "One Dollar")]
-        public async Task GenerateIntegerWords_ShouldGenerate_AsExpected(Int64 number, string expected)
-        {
-            string actual = String.Join(" ",_converterService.GenerateIntegerWords(number));
-            Assert.Equal(expected, actual);
-        }
 
-        [Theory]
-        [InlineData(23, "Twenty-Three Cents")]
-        [InlineData(1, "One Cent")]
-        public async Task GenerateFractionWords_ShouldGenerate_AsExpected(int number, string expected)
-        {
-            string actual = String.Join(" ", _converterService.GenerateFractionWords(number));
-            Assert.Equal(expected, actual);
-        }
 
     }
 }

@@ -8,7 +8,8 @@
 
     public static class NumberWords
     {
-        public static readonly string[] OneToNine = { 
+        public static readonly string[] UnitsMap= { 
+                                        "Zero",
                                         "One",
                                         "Two",
                                         "Three",
@@ -29,7 +30,7 @@
                                         "Eighteen",
                                         "Ninteen"};
 
-        public static readonly string[] TenToNinety = { 
+        public static readonly string[] TensMap = { 
                                         "Ten", 
                                         "Twenty", 
                                         "Thirty", 

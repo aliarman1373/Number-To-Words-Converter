@@ -26,7 +26,7 @@ namespace NumberToWordsConverter.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<string> GetConvertNumberToWords([FromBody] NumberModel model,CancellationToken cancellationToken)
         {
-            return Ok(_converterService.ConvertNumberToWords(Convert.ToDecimal(model.Number)));
+            return Ok(_converterService.ConvertNumberToWordsInCurrency(Convert.ToDecimal(model.Number)));
         }
     }
 }
