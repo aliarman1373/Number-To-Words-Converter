@@ -76,3 +76,5 @@ When the converter receives a decimal number, it first validates number to make 
 
 If the number is valid, it separates the integer part from fraction part of the number and convert them to words separately and add "Dollars" word for the integer part and "Cents" word for the fraction part. The method split each part to 3 digits number and generate words for each 3 numbers. Then it added notations for each 3 digits based on their place. The method uses constant strings for words to convert number to words. All constants can be found in NumberToWordsConverter.Core/Models/Constants.cs
 
+The main advantage of my solution is being more generic compared to other solutions. If you want to convert bigger numbers than trillion like quadrillion, the only change that needs to be done is to add the notations to the NumberWords constant array and change the validation condition. It could be done simpler, but it would not be as generic as it is now.
+
