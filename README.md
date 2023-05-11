@@ -14,7 +14,7 @@ There are Two folders in Number-To-Words-Converter which are:
 
 
 
-NumberToWords.UI includes 3 different projects as following:
+NumberToWords.Service includes 3 different projects as following:
 
 - NumberToWordsConverter.API: This project is the web API which contains the controllers and endpoints for receiving and responding to HTTP requests. This API project has a dependency on NumberToWordsConverter.Core.
 
