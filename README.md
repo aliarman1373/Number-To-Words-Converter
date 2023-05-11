@@ -28,7 +28,7 @@ NumberToWords.Service includes 3 different projects as following:
 
 To be able work with the NumberToWords.Service via the React application, you need to run the API and the React app at the same time. 
 
-Run API: To run the API you only need to clone the NumberToWords.Service folder and open the NumberToWordsConverter.sln via and IDE like Visual studio or Visual Studio Code. You do not need to configure any settings and it should be straight forward. Then you can set the NumberToWordsConverter.API as startup project and run the project.
+Run API: To run the API you only need to clone the NumberToWords.Service folder and open the NumberToWordsConverter.sln via an IDE like Visual studio or Visual Studio Code. You do not need to configure any settings and it should be straight forward. Then you can set the NumberToWordsConverter.API as startup project and run the project.
 
 Run React Application: To run the React app, You need to clone the NumberToWords.UI folder and running following commands in the directory:
 
